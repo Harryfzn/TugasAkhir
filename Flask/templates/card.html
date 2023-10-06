@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil</title>
+    <style>
+        body{
+            background-color: #FDFDFD;
+        }
+
+        .container{
+            text-align: center;
+        }
+
+        .card{
+            background-color: blue;
+            display: flex;
+            margin: auto;
+            width: 500px;
+            height: 200px;  
+            margin-top: 50px;
+            background: #FFFFFF;
+            box-shadow: 3px 5px 24px rgba(0, 0, 0, 0.16);
+            border-radius: 18px;
+            padding: 30px 30px;
+        }
+
+        img{
+            width: 300px;
+            height: 200px;
+        }
+
+        .hasil{
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+
+        .hasil-bunga{
+            margin-top: 20px;
+            background: #0a7631;
+            box-shadow: 0px 4px 4px rgba(241, 233, 233, 0.25);
+            border-radius: 100px;
+            color: #F5F9FD;
+            padding: 1px 40px;
+            border: none;
+            font-size: 15px;
+        }
+
+        h2{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Hasil Identifikasi Penyakit Pada Tanaman Selada</h2>
+        <div class="card">
+            <img id="image" src="/static/{{image_name}}" alt="">
+            <div class="hasil">
+                <h3>Hasil</h3>
+                <div class="hasil-bunga">
+
+                    <h3>{{kelas}}</h3>
+                </div>
+            </div>
+            <a href="/" class="kembali-button">Kembali</a>
+        </div>
+    </div>
+    <!-- <div id="src">{{image_name}}</div> -->
+
+    <!-- <script>
+        let src = document.getElementById("src").textContent;
+
+        console.info(src)
+
+        document.getElementById("image").src = `./images/${src}`
+    </script> -->
+</body>
+</html>

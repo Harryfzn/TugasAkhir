@@ -1,0 +1,3 @@
+bercak 399 
+busuk 510
+normal 495

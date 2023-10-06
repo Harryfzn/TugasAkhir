@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File</title>
+    <style>
+        body{
+            background-color: #FDFDFD;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+
+        h2{
+            padding-bottom: 50px;
+        }
+
+        #submit{
+            margin-top: 20px;
+            background: #0a7631;
+            box-shadow: 0px 4px 4px rgba(241, 233, 233, 0.25);
+            border-radius: 100px;
+            color: #F5F9FD;
+            padding: 12px 40px;
+            border: none;
+            font-size: 15px;
+        }
+
+        .file-upload-wrapper{
+            text-align: start;
+            background: #F5F9FD;
+            border: 1px solid #8B8B8B;
+            border-radius: 40px;
+            padding: 8px 30px;
+        }
+
+        form{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Identifikasi Penyakit pada Tanaman Selada</h2>
+
+        <form method="post" enctype="multipart/form-data" action="/templates/card.html">
+            <div class="file-upload-wrapper">
+                <input name="file-upload-field" type="file" class="file-upload-field" value="">
+            </div>
+            <input type="submit" name="submit" id="submit" value="Mulai">
+        </form>
+    </div>
+</body>
+</html>
